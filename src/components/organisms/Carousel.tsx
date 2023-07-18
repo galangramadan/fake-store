@@ -26,9 +26,10 @@ const Carousel = () => {
           <img
             key={i}
             src={slide}
-            className={`min-w-full rounded-2xl -translate-x-[${
-              current * 100
-            }%] transition-all duration-500`}
+            className={`min-w-full rounded-2xl transition-all duration-500`}
+            style={{
+              transform: `translateX(${-100 * current}%)`,
+            }}
           />
         );
       })}
