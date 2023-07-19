@@ -18,7 +18,6 @@ const Carousel = () => {
     };
   }, []);
 
-  console.log(current);
   return (
     <div className="mx-4 flex pt-24 overflow-hidden">
       {slides.map((slide, i) => {
