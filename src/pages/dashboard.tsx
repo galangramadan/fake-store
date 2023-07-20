@@ -8,7 +8,7 @@ const Dashboard = () => {
   return (
     <>
       <Header />
-      <div className="container mx-auto pt-20">
+      <div className="container mx-auto pt-28">
         <h1 className="text-3xl font-bold text-center">Dashboard</h1>
         <div className="flex text-lg pt-10">
           <div className="font-medium">

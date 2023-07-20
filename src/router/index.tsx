@@ -25,7 +25,7 @@ const RootRouter = () => {
         <Route path="/dashboard" element={<Dashboard />} />
       </Route>
 
-      <Route path="/401" element={<Unauthorized />} />
+      <Route path="/unauthorized" element={<Unauthorized />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

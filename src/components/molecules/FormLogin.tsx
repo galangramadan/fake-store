@@ -31,7 +31,7 @@ const FormLogin = () => {
   return (
     <form onSubmit={handleLogin}>
       <Label name="username">Username</Label>
-      <Input type="text" placeholder="example@mail.com" name="username" />
+      <Input type="text" placeholder="Masukan Username" name="username" />
       <Label name="password">Password</Label>
       <Input type="password" placeholder="******" name="password" />
       <Button type="submit">Masuk</Button>

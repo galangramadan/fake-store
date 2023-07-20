@@ -7,8 +7,8 @@ const FormRegister = () => {
     <form action="">
       <Label name="fullname">Nama Lengkap</Label>
       <Input type="text" placeholder="Masukan Nama Lengkap" name="fullname" />
-      <Label name="email">Email</Label>
-      <Input type="email" placeholder="email@mail.com" name="email" />
+      <Label name="username">Username</Label>
+      <Input type="text" placeholder="Masukan Username" name="username" />
       <Label name="password">Password</Label>
       <Input type="password" placeholder="******" name="password" />
       <Label name="confirmPassword">Konfirmasi Password</Label>
