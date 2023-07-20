@@ -13,24 +13,23 @@ const CardProduct = (props: Props) => {
   const { id, image, title, price, rate, count } = props;
 
   return (
-    <div className="flex flex-col w-48 h-80 border-b border-gray-300 shadow">
-      <Link to={`/product/${id}`}>
+    <Link to={`/product/${id}`}>
+      <div className="flex flex-col w-48 h-80 hover:scale-105 duration-300">
         <img
           src={image}
           alt={title}
           className="rounded-t-lg h-48 w-full object-cover"
         />
-      </Link>
-      <div>
-        <h5 className="">{title}</h5>
-        <span className="font-semibold">$ {price}</span>
+
+        <div>
+          <h5 className="">{title}</h5>
+          <span className="font-semibold">$ {price}</span>
+        </div>
+        <div className="w-full flex-none text-sm font-medium">
+          Rating {rate}/5 ({count})
+        </div>
       </div>
-      <div>
-        <span>{rate}</span>
-        <span>|</span>
-        <span>{count}</span>
-      </div>
-    </div>
+    </Link>
   );
 };
 

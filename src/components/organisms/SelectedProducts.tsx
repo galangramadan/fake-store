@@ -1,21 +1,8 @@
-import { useEffect, useState } from "react";
 import CardProduct from "../molecules/CardProduct";
-import { getProducts } from "../../services/product.services";
+import useGetAllProducts from "../../hooks/useGetAllProducts";
 
 const SelectedProducts = () => {
-  const [selectedProducts, setSelectedProducts] = useState(
-    [] as ProductDetails[]
-  );
-
-  useEffect(() => {
-    const controller = new AbortController();
-    getProducts((data) => {
-      setSelectedProducts(data);
-    });
-    return () => {
-      controller.abort();
-    };
-  }, []);
+  const selectedProducts = useGetAllProducts();
 
   return (
     <div className="mx-4 pt-8">
@@ -37,6 +24,11 @@ const SelectedProducts = () => {
                 </div>
               )
           )}
+        {Object.keys(selectedProducts).length == 0 && (
+          <div>
+            <h1>Memuat...</h1>
+          </div>
+        )}
       </div>
     </div>
   );

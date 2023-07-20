@@ -11,7 +11,9 @@ const Logo = (props: Props) => {
   return (
     <Link to="/">
       <div
-        className={`flex items-end -ml-1 text-${3 + fontUp}xl text-green-600`}
+        className={`flex items-end -ml-1 mb-2 text-${
+          3 + fontUp
+        }xl text-green-600`}
       >
         <MdStoreMallDirectory />
         <span className={`text-${3 + fontUp}xl font-semibold`}>fakepedia</span>

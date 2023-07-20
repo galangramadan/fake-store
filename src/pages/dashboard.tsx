@@ -10,21 +10,29 @@ const Dashboard = () => {
       <Header />
       <div className="container mx-auto pt-20">
         <h1 className="text-3xl font-bold text-center">Dashboard</h1>
-        {/* <p>Nama :{userDetails.name.firstname} </p> */}
-        {Object.keys(userDetails).length > 0 && (
-          <div>
-            <p>
-              Nama : {userDetails.name.firstname} {userDetails.name.lastname}
-            </p>
-            <p>Email : {userDetails.email}</p>
-            <p>No. Telepon : {userDetails.phone}</p>
-            <p>
-              Alamat : {userDetails.address.number} {userDetails.address.street}{" "}
-              street, {userDetails.address.city} city.
-            </p>
-            <p>Kode Pos : {userDetails.address.zipcode}</p>
+        <div className="flex text-lg pt-10">
+          <div className="font-medium">
+            <p>Nama</p>
+            <p>Email</p>
+            <p>No. Telepon</p>
+            <p>Alamat</p>
+            <p>Kode Pos</p>
           </div>
-        )}
+          {Object.keys(userDetails).length > 0 && (
+            <div className="pl-2">
+              <p>
+                : {userDetails.name.firstname} {userDetails.name.lastname}
+              </p>
+              <p>: {userDetails.email}</p>
+              <p>: {userDetails.phone}</p>
+              <p>
+                : {userDetails.address.number} {userDetails.address.street}{" "}
+                street, {userDetails.address.city} city.
+              </p>
+              <p>: {userDetails.address.zipcode}</p>
+            </div>
+          )}
+        </div>
       </div>
       <Footer />
     </>

@@ -7,3 +7,7 @@
         max-width: 77rem;
     }
 }
+
+body {
+    overflow-x: hidden;
+}

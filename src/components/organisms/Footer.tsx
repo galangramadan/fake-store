@@ -11,7 +11,7 @@ const Footer = () => {
         </ul>
         <div className="flex justify-center items-end gap-4">
           <Logo fontUp={-1} />
-          <span className="font-bold text-lg text-green-600">2023</span>
+          <span className="font-bold text-lg text-green-600 mb-2">2023</span>
         </div>
       </div>
     </div>

@@ -27,6 +27,7 @@ const ProductCategories = () => {
   useEffect(() => {
     const controller = new AbortController();
     getCategoryProducts(category, (data) => {
+      setCategoriesProducts([]);
       setCategoriesProducts(data);
     });
     return () => {

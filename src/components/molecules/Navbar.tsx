@@ -12,13 +12,13 @@ const Navbar = () => {
         </li>
         {authorized() ? (
           <>
-            <div>
+            <div className="font-semibold text-green-600 flex gap-2">
               <Link to="/dashboard">Dashboard</Link>
-              <button onClick={() => logout()}>Logout</button>
+              <button onClick={() => logout()} className="text-red-500">
+                Logout
+              </button>
             </div>
-            <button>
-              <img src="/images/avatar.png" alt="avatar" className="w-8" />
-            </button>
+            <img src="/images/avatar.png" alt="avatar" className="w-8 pr-2" />
           </>
         ) : (
           <>
