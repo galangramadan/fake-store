@@ -9,7 +9,7 @@ const PrivateRoute = () => {
       </>
     );
   }
-  return <Navigate to="/401" />;
+  return <Navigate to="/unauthorized" />;
 };
 
 export default PrivateRoute;
