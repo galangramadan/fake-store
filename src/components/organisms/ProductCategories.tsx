@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import Category from "../atoms/Category";
-import { getCategories, getCategoryProducts } from "../../services/product";
+import {
+  getCategories,
+  getCategoryProducts,
+} from "../../services/product.services";
 import CardProduct from "../molecules/CardProduct";
 
 const ProductCategories = () => {

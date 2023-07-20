@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import CardProduct from "../molecules/CardProduct";
-import { getProducts } from "../../services/product";
+import { getProducts } from "../../services/product.services";
 
 const SelectedProducts = () => {
   const [selectedProducts, setSelectedProducts] = useState(

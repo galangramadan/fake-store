@@ -1,22 +1,9 @@
-import { useEffect, useState } from "react";
-import { getUser, getUserDetails } from "../services/auth";
 import Header from "../components/organisms/Header";
 import Footer from "../components/organisms/Footer";
+import useGetUserDetails from "../hooks/useGetUserDetails";
 
 const Dashboard = () => {
-  const [userDetails, setUserDetails] = useState({} as UserDetails);
-
-  const user = getUser(localStorage.getItem("token") as string);
-
-  useEffect(() => {
-    const controller = new AbortController();
-    getUserDetails(user.sub as number, (data) => {
-      setUserDetails(data);
-    });
-    return () => {
-      controller.abort();
-    };
-  }, []);
+  const userDetails = useGetUserDetails();
 
   return (
     <>

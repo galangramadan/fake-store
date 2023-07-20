@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { login } from "../../services/auth";
+import { login } from "../../services/auth.services";
 import Input from "../atoms/Input";
 import Button from "../atoms/Button";
 import Label from "../atoms/Label";

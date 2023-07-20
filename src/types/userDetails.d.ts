@@ -11,4 +11,5 @@ interface UserDetails {
   };
   phone: string;
   email: string;
+  username: string;
 }

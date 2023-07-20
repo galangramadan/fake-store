@@ -1,4 +1,4 @@
-import { getProducts } from "../../services/product";
+import { getProducts } from "../../services/product.services";
 import CardProduct from "../molecules/CardProduct";
 import { useEffect, useState } from "react";
 
