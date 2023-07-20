@@ -20,10 +20,10 @@ const FormLogin = () => {
 
     login(data, (status: boolean, res) => {
       if (status) {
-        localStorage.setItem("token", res);
+        localStorage.setItem("token", res as string);
         window.location.href = "/";
       } else {
-        setLoginFailed(res);
+        setLoginFailed(res as string);
       }
     });
   };
